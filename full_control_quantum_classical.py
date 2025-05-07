@@ -133,4 +133,4 @@ colC.write(f"Current Time Step: {st.session_state.frame}")
 if st.session_state.running and st.session_state.frame < total_steps:
     time.sleep(speed)
     st.session_state.frame += 1
-    st.experimental_rerun()
+    st.rerun()
